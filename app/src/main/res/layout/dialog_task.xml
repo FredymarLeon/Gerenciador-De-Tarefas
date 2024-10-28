@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="252dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="#A972F8">
+
+    <EditText
+        android:id="@+id/etDialogAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dialog_add_task"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"/>
+
+    <RadioGroup
+        android:id="@+id/rgcategoryTaskAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbTrabalho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trabalho"
+            android:checked="true"
+            android:textColor="@color/white"
+            android:buttonTint="#FF5722"/>
+
+        <RadioButton
+            android:id="@+id/rbEstudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudo"
+            android:textColor="@color/white"
+            android:buttonTint="#00BCD4"/>
+
+        <RadioButton
+            android:id="@+id/rbPessoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pessoal"
+            android:textColor="@color/white"
+            android:buttonTint="#FFEB3B"/>
+        <RadioButton
+            android:id="@+id/rbOutro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Outro"
+            android:textColor="@color/white"
+            android:buttonTint="#9C27B0"/>
+
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/btnAddTask" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar Tarefa"
+        android:backgroundTint="#E91E63"/>
+
+</LinearLayout>
